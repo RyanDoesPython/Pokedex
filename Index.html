@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pokedex">
+        <svg class="pokedexSVG" width="1076" height="899" viewBox="0 0 1076 899" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M555.833 73.7001C555.936 65.0354 562.903 58.04 571.569 58.0111C600.984 57.9128 665.355 58.3658 704.857 63.6375C757.332 70.6405 778.069 111.905 833.66 124.664C878.946 135.058 952.368 133.296 956.986 133.174C957.141 133.17 957.293 133.168 957.448 133.168H1052.06C1060.83 133.168 1067.96 140.228 1068.06 148.998L1075.83 882.831C1075.92 891.733 1068.73 899 1059.83 899H562.192C553.281 899 546.087 891.72 546.193 882.809L555.833 73.7001Z" fill="#FF4F4F"/>
+            <path d="M0 80C0 35.8172 35.8172 0 80 0H562C566.418 0 570 3.58172 570 8V899H40C17.9086 899 0 881.091 0 859V80Z" fill="#FF4F4F"/>
+            <path d="M529 0H562C566.418 0 570 3.58172 570 8V899H529V0Z" fill="#FF4F4F"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M529 899H536V0H529V899Z" fill="#CF4848"/>
+            <path d="M570 899H554C549.582 899 546 895.418 546 891V0H563C566.866 0 570 3.13401 570 7V899Z" fill="#FF4F4F"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M563 899H570V7C570 3.13401 566.866 0 563 0V899Z" fill="#CF4848"/>
+        </svg>
+        <svg class="dots" width="143" height="37" viewBox="0 0 143 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18.5" cy="18.5" r="16" fill="#B4303E" stroke="#A83531" stroke-width="5"/>
+            <circle cx="71.5" cy="18.5" r="16" fill="#F5F948" stroke="#DADD5C" stroke-width="5"/>
+            <circle cx="124.5" cy="18.5" r="16" fill="#59C176" stroke="#5F874C" stroke-width="5"/>
+        </svg>
+        <div class="header">
+            <div class="inputs">
+                <input id="searchBar" class="searchBar">
+                <button id="searchButton" class="searchButton">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 32L24.75 24.75M28.6667 15.3333C28.6667 22.6971 22.6971 28.6667 15.3333 28.6667C7.96954 28.6667 2 22.6971 2 15.3333C2 7.96954 7.96954 2 15.3333 2C22.6971 2 28.6667 7.96954 28.6667 15.3333Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="section1">
+            <div class="nameAndID">
+                <div class="name">
+                    <p id="nameText">
+                        Pikachu
+                    </p>
+                </div>
+                <div class="id">
+                    <p id="idText">
+                        #1
+                    </p>
+                </div>
+            </div>
+            <div id="pokemonImgSection" class="pokemonImgSection">
+                <img class="pokemonImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png">
+                <svg class="pokeballBG" width="450" height="545" viewBox="0 0 450 545" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H450V545H0V0Z" fill="#F4F4F4"/>
+                    <path d="M405 273C405 372.411 324.411 453 225 453C125.589 453 45 372.411 45 273C45 173.589 125.589 93 225 93C324.411 93 405 173.589 405 273Z" fill="#D9D9D9"/>
+                    <path d="M300 273C300 314.421 266.421 348 225 348C183.579 348 150 314.421 150 273C150 231.579 183.579 198 225 198C266.421 198 300 231.579 300 273Z" fill="white"/>
+                    <path d="M45.171 265H150.422L150 273L150.422 281L151.5 288L153.278 295H46.3242L45.5 287.5L45 280V272.5L45.171 265Z" fill="white"/>
+                    <path d="M404.829 265H299.578L300 273L299.63 280.5L298.5 287.999L296.722 295H403.676L404.5 287.5L405 280V272.5L404.829 265Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="section1Footer">
+                <!-- Type -->
+                <div id="typesContainer" class="typesContainer">
+
+                </div>
+                <!-- weight and height -->
+                <div class="measurmentContainer">
+                    <p id="weight" class="weight">
+                    </p>
+                    <p id="height" class="height"></p>
+                    </p>
+                </div>
+                
+                <!-- buttons -->
+                <button id="shinyButton" class="shinyButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                </button>
+                <button id="flipButton" class="flipButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M360-120H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h160v80H200v560h160v80Zm80 80v-880h80v880h-80Zm160-80v-80h80v80h-80Zm0-640v-80h80v80h-80Zm160 640v-80h80q0 33-23.5 56.5T760-120Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80q33 0 56.5 23.5T840-760h-80Z"/></svg>
+                </button>
+            </div>
+        </div>
+    
+        <div class="section2">
+            <div id="subsection" class="subsection">
+                
+            </div>
+        </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
